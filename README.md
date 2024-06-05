@@ -1,30 +1,53 @@
-# 📐 Add Comments to Implementation of Event Handlers on Mouse Clicks
+# Click Counter HTML Template
 
-Work with a partner to add comments that describe the functionality of the code found in [Unsolved](./Unsolved/assets/js/script.js).
+This HTML template creates a simple click counter web page with increment and decrement functionality. It includes references to external CSS for styling and JavaScript for interactivity.
 
-## 📝 Notes
+## Key Elements
 
-Refer to the documentation:
+- **DOCTYPE Declaration**: Defines the document type and HTML version.
+- **HTML Language Attribute (`<html lang="en">`)**: Sets the language of the document to English.
+- **Character Encoding (`<meta charset="UTF-8">`)**: Ensures the document is displayed with the correct character set.
+- **Viewport Configuration (`<meta name="viewport" content="width=device-width, initial-scale=1.0">`)**: Makes the website responsive by setting the viewport width to the device width.
+- **IE Compatibility (`<meta http-equiv="X-UA-Compatible" content="ie=edge">`)**: Ensures the document is rendered using the latest Internet Explorer rendering engine.
+- **Title (`<title>Click Counter</title>`)**: Sets the title of the document, which appears in the browser tab.
+- **External CSS Link (`<link rel="stylesheet" href="./assets/css/style.css">`)**: Links to an external CSS file for styling the webpage.
+- **Wrapper Container (`<div class="wrapper">`)**: A wrapper div to contain the main content of the page.
+- **Content Container (`<div class="container">`)**: A container div for organizing content.
+- **Card Contents (`<div class="card-contents">`)**: A div to hold the interactive elements.
+- **Count Display (`<h4>Current Count: <span id="count">0</span></h4>`)**: Displays the current count value, starting at 0.
+- **Decrement Button (`<button id="decrement">Decrement</button>`)**: A button to decrement the count.
+- **Increment Button (`<button id="increment">Increment</button>`)**: A button to increment the count.
+- **External JavaScript Link (`<script src="./assets/js/script.js"></script>`)**: Links to an external JavaScript file for adding interactivity to the webpage.
 
-[MDN Documentation on Event Listeners](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+## Usage
 
-[MDN Documentation on Query Selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+1. **Structure**: The HTML structure includes a wrapper, container, and card contents to organize the elements neatly.
+2. **Styling**: External CSS is linked to provide consistent styling for the webpage.
+3. **Interactivity**: External JavaScript is linked to handle the increment and decrement functionalities.
 
-## Assets
+# JavaScript Code for Click Counter Functionality
 
-The following animation demonstrates the web application's appearance and functionality:
+This script manages a click counter by incrementing or decrementing a displayed count based on button clicks. The code updates the DOM to reflect the current count value.
 
-![The current count number increases when the Increment button is clicked and decreases when the Decrement button is clicked.](./images/01-demo.gif)
+## Key Components
 
----
+- **Counter Variable (`count`)**: Initializes the counter value to 0.
+- **Element Selection**: Uses `document.querySelector` to select the increment and decrement buttons and the count display element.
+- **Update Function (`setCounterText`)**: Updates the displayed count value on the webpage.
 
-## 🏆 Bonus
+## Event Listeners
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+- **Increment Button**: Increases the count by 1 and updates the display when the increment button is clicked.
+- **Decrement Button**: Decreases the count by 1 (if the count is greater than 0) and updates the display when the decrement button is clicked.
+
+
 
 * A click is just one type of DOM event. What are some others?
+Some other types of DOM events include:
 
-Use [Google](https://www.google.com) or another search engine to research this.
+- **Mouse Events**: `mouseover`, `mouseout`, `mousedown`, `mouseup`, `mousemove`, `dblclick`
+- **Keyboard Events**: `keydown`, `keypress`, `keyup`
+- **Form Events**: `submit`, `reset`, `focus`, `blur`, `change`, `input`
+- **Window Events**: `load`, `unload`, `resize`, `scroll`
+- **Touch Events**: `touchstart`, `touchmove`, `touchend`, `touchcancel`
 
----
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
